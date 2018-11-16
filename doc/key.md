@@ -35,9 +35,9 @@ session:用户与服务器之间的会话，
 		
 数据表设计：
 	用户信息：
-		create table sys_user (
-  user_id 			int(11) 		not null auto_increment    comment '用户ID',
-  login_name 		varchar(30) 	not null 				   comment '登录账号',
+create table sys_user (
+user_id 			int(11) 		not null auto_increment comment '用户ID',
+login_name 		varchar(30) 	not null 		comment '登录账号',
   user_name 		varchar(30) 	not null 				   comment '用户昵称',
   user_type 		varchar(2) 	    default '00' 		       comment '用户类型（00系统用户）',
   email  			varchar(50) 	default '' 				   comment '用户邮箱',
